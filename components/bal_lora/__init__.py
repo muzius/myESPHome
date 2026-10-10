@@ -141,6 +141,7 @@ SX1509_PIN_SCHEMA = cv.All(
 )
 
 
+
 @pins.PIN_SCHEMA_REGISTRY.register(CONF_SX1509, SX1509_PIN_SCHEMA)
 async def sx1509_pin_to_code(config):
     var = cg.new_Pvariable(config[CONF_ID])
